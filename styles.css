@@ -1,0 +1,131 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Set a minimum height of the viewport */
+  
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+#main-container {
+  flex: 1; /* Use flex: 1 to allow it to grow and fill the remaining space */
+  background-image: url("apj.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column; /* Ensure its children are aligned vertically */
+}
+
+header {
+  background-color: rgba(44, 62, 80, 0.8);
+  padding: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+nav ul li {
+  margin-right: 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  position: relative;
+}
+
+nav ul li a:hover {
+  background-color: rgba(52, 73, 94, 0.8);
+}
+
+nav ul li a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background-color: #eaee12;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+nav ul li a:hover::after {
+  transform: scaleX(1);
+}
+
+#header-title {
+  font-size: 36px;
+  color: #fff;
+  margin: 0;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.container-wrapper {
+  display: flex;
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+.container {
+  flex: 1;
+  background-color: rgba(255, 255, 255, 0.15);
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  display: none;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+}
+
+#about-container {
+  margin-right: 20px;
+}
+
+#achievements and books -container{
+  margin-right: 20px;
+}
+
+#history-container {
+  margin-right: 20px;
+}
+
+#content h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 0;
+  color: #fff;
+}
+
+
+#content p {
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #bbb;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+footer a {
+  color: #bbb;
+  text-decoration: none;
+}
+
